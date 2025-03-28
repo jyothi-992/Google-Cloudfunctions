@@ -1,4 +1,13 @@
 **Instructions to Deploy and Destroy the Infrastructure**
+**Important Notes**
+Function Source: The Cloud Function source code (function-source.zip) should be uploaded to a Google Cloud Storage bucket (gs://your-bucket-name), which is referenced in the Cloud Function module.
+
+IAM Configuration: The IAM module grants permissions to a service account to invoke the Cloud Function.
+
+Load Balancer: The Load Balancer is configured to route traffic to the Cloud Function. It’s set to expose the Cloud Function via HTTP(S).
+
+Security: Make sure the IAM roles are correctly assigned to ensure only authorized users or services can invoke the Cloud Function.
+
 # GCP "Hello World" Application
 
 ## Prerequisites
