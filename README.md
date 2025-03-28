@@ -19,7 +19,7 @@ Security: Make sure the IAM roles are correctly assigned to ensure only authoriz
 
 1. Clone the repository or create a new directory for Terraform configuration.
 
-2. Update `provider.tf` with your project ID.
+2. Update `terrafor.tfvars` with your project ID, and all other parameters.
 
 3. Initialize Terraform:
 terraform init
